@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 def sub(finalist):
     tot = 0
-    for i in finalst:
-        if max(finalist) > i:
+    for i in finalist:
+        if (max(finalist)) > i:
             tot += i
-    return (max(finalist) - tot)
+    return ((max(finalist)) - tot)
 
 
 def roman_to_int(roman_string):
