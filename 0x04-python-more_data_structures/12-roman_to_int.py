@@ -16,7 +16,7 @@ def roman_to_int(roman_string):
     count = 0
     finalist = [0]
 
-    for rom__xhr in roman_string:
+    for rom_xhr in roman_string:
         for num in rom_list:
             if num == rom_xhr:
                 if rom_num.get(rom_xhr) <= rand:
