@@ -2,7 +2,7 @@
 def minus(finalist):
     tot = 0
     newlst = max(finalist)
-    for i in newlst:
+    for i in finalist:
         if newlst > i:
             tot += i
     return (newlst - tot)
