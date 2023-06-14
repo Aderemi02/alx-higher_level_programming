@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 def number_keys(a_dictionary):
+    result = 0
     newlist = sorted(a_dictionary.keys())
     for i in newlist:
-        print("{}: {}".format(i, a_dictionary.get(i)))
+        result += 1
+    return (result)
