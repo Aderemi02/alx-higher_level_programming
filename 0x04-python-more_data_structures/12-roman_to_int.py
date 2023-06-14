@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-def sub(finalist):
+def minus(finalist):
     tot = 0
     for i in finalist:
         if max(finalist) > i:
@@ -16,14 +16,14 @@ def roman_to_int(roman_string):
     count = 0
     finalist = [0]
 
-    for rom_xhr in roman_string:
+    for rom in roman_string:
         for num in rom_list:
-            if num == rom_xhr:
-                if rom_num.get(rom_xhr) <= rand:
-                    count += sub(finalist)
-                    finalist = [rom_num.get(rom_xhr)]
+            if num == rom:
+                if rom_num.get(rom) <= rand:
+                    count += minus(finalist)
+                    finalist = [rom_num.get(rom)]
                 else:
-                    finalist.append(rom_num.get(rom_xhr))
-                finalist = rom_num.get(rom_xhr)
-    count += sub(finalist)
+                    finalist.append(rom_num.get(rom))
+                finalist = rom_num.get(rom)
+    count += minus(finalist)
     return (count)
