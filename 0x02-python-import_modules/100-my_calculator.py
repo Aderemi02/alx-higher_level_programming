@@ -12,5 +12,5 @@ if __name__ = "__main__":
     a = int(argv[1])
     b = int(argv[3])
     c = argv[2]
-    result = operator[c](a, b)
+    result = operators[c](a, b)
     print("{} {} {} = {}".format(a, c, b, result))
