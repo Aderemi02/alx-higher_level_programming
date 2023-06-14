@@ -1,7 +1,8 @@
 #!/usr/bin/python3
-def minus(finalist):
+def minusnum(finalist):
     tot = 0
     newlst = max(finalist)
+    
     for i in finalist:
         if newlst > i:
             tot += i
@@ -21,10 +22,10 @@ def roman_to_int(roman_string):
         for num in rom_list:
             if num == rom:
                 if rom_num.get(rom) <= rand:
-                    count += minus(finalist)
+                    count += minusnum(finalist)
                     finalist = [rom_num.get(rom)]
                 else:
                     finalist.append(rom_num.get(rom))
                 finalist = rom_num.get(rom)
-    count += minus(finalist)
+    count += minusnum(finalist)
     return (count)
