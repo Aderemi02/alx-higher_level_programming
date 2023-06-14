@@ -2,19 +2,19 @@
 def sub(finalist):
     tot = 0
     for i in finalist:
-        if (max(finalist)) > i:
+        if max(finalist) > i:
             tot += i
-    return ((max(finalist)) - tot)
+    return (max(finalist) - tot)
 
 
 def roman_to_int(roman_string):
     if not roman_string or not isinstance(roman_string, str):
         return 0
+    rom_num = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}
+    rom_list = list(rom_num.keys())
     rand = 0
     count = 0
     finalist = [0]
-    rom_num = {"I": 1, "V": 5, "X": 10, "L": 50, "C": 100, "D": 500, "M": 1000}
-    rom_list = list(rom_num.keys())
 
     for rom__xhr in roman_string:
         for num in rom_list:
