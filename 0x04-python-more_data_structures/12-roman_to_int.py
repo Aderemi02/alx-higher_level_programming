@@ -1,10 +1,11 @@
 #!/usr/bin/python3
 def minus(finalist):
     tot = 0
-    for i in finalist:
-        if max(finalist) > i:
+    newlst = max(finalist)
+    for i in newlst:
+        if newlst > i:
             tot += i
-    return (max(finalist) - tot)
+    return (newlst - tot)
 
 
 def roman_to_int(roman_string):
