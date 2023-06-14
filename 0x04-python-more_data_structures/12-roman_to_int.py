@@ -12,7 +12,7 @@ def roman_to_int(roman_string):
         return 0
     rand = 0
     count = 0
-    fianlist = [0]
+    finalist = [0]
     rom_num = {"I": 1, "V": 5, "X": 10, "L": 50, "C": 100, "D": 500, "M": 1000}
     rom_list = list(rom_num.keys())
 
