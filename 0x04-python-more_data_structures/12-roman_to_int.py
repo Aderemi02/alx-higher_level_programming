@@ -1,4 +1,12 @@
 #!/usr/bin/python3
+def sub(finalist):
+    tot = 0
+    for i in finalst:
+        if max(finalist) > i:
+            tot += i
+    return (max(finalist) - tot)
+
+
 def roman_to_int(roman_string):
     if not roman_string or not isinstance(roman_string, str):
         return 0
@@ -19,11 +27,3 @@ def roman_to_int(roman_string):
                 finalist = rom_num.get(rom_xhr)
     count += sub(finalist)
     return (count)
-
-
-def sub(finalist):
-    tot = 0
-    for i in finalst:
-        if max(finalist) > i:
-            tot += i
-    return (max(finalist) - tot)
