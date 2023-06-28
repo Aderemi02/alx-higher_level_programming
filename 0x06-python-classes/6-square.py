@@ -52,7 +52,7 @@ class Square:
             print("")
         [print("") for pos in range(self.position[1])]
         for num in range(self.__size):
-            [print(" ", end="") for pos in range(self.position[0])]
+            [print(" ", end="") for pos2 in range(self.position[0])]
             for num2 in range(self.__size):
                 print("#", end="")
             print("")
