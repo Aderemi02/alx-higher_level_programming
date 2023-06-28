@@ -49,7 +49,7 @@ class Square:
         """prints the result of the square using #"""
         if (self.__size == 0):
             print("")
-        [print("") for p in range(self.__position[1])]
+        [print("") for p in range(0, self.__position[1])]
         for num in range(self.__size):
             [print(" ", end="") for q in range(0, self.__position[0])]
             for num2 in range(self.__size):
