@@ -89,4 +89,4 @@ class Rectangle:
 
         for new in range(self.__height):
             rec += ("#" * self.__width) + "\n"
-        return rec
+        return rec[0:-1]
