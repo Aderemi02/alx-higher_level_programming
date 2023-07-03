@@ -99,5 +99,5 @@ class Rectangle:
     def __del__(self):
         """this prints a message that shows an instance is deleted"""
 
-        Rectangle.number_of_instances -= 1
+        type(self).number_of_instances -= 1
         print("Bye rectangle...")
