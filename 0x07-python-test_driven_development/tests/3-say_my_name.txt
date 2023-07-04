@@ -1,0 +1,38 @@
+========================
+How to use the 3-say_my_name.py function
+=========================
+case 1:
+	>>>say_my_name = __import__('3-say_my_name').say_my_name
+	>>>say_my_name("Remi", "Kunle")
+	my name is Remi Kunle
+
+case 2:
+	>>>say_my_name("Remi kay", "Kunle")
+	my name is Remi kay Kunle
+
+===================
+WHEN THE LAST NAME IS UNAVAILABLE
+===================
+
+case 3:
+	>>>say_my_name("Remi")
+	my name is Remi
+
+=============
+invalid names
+=============
+
+case 4:
+	>>>say_my_name(5, "Kunle")
+	Traceback (most recent call last):
+	TypeError: first_name must be a string
+
+case 5:
+	>>>say_my_name("Remi", ["Kunle", "heat"])
+	Traceback (most recent call last):
+	TypeError: last_name must be a string
+
+case 6:
+	>>>say_my_name(None)
+	Traceback (most recent call last):
+	TypeError: first_name must be a string
