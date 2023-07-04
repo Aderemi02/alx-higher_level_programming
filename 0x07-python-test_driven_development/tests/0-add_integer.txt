@@ -1,0 +1,54 @@
+===========
+How to use 0-add_integer.py
+===========
+
+case 1:
+
+	>>> add_integer = __import__('0-add_integer').add_integer
+	>>> add_integer(4, 7)
+	11
+
+case 2:
+	>>> add_integer(4, -7)
+	-3
+
+for float:
+
+case 1:
+	>>>add_integer(4.0, 3.0)
+	7
+
+case 2:
+	>>>add_integer(2.5, 4.2)
+	6
+
+case 3:
+	>>>add_integer(-2.5, -4.2)
+	-6
+==========================================
+FOR NON-NUMBERS
+==========================================
+case 1:
+	>>>add_integer("hello", 5)
+	Traceback (most recent call last):
+	TypeError: a must be an integer
+
+case 2:
+	>>>add_integer(5, "hello")
+	Traceback (most recent call last):
+	TypeError: b must be an integer
+
+case 3:
+	>>>add_integer("hello", "Remi")
+	Traceback (most recent call last):
+	TypeError: a must be an integer
+
+case 4:
+	>>>add_integer(None)
+	Traceback (most recent call last):
+	TypeError: a must be an integer
+
+case 5:
+	>>>add_integer(None, 2)
+	Traceback (most recent call last):
+	TypeError: a must be an integer
