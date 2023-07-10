@@ -5,7 +5,7 @@ calculating the area of the square and also rep string
 Rectangle = __import__('9-rectangle').Rectangle
 
 
-class square(Rectangle):
+class Square(Rectangle):
     """
     a square class
     """
