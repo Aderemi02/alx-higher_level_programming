@@ -2,7 +2,7 @@
 """ a class MyInt that inherits from int:"""
 
 
-class Myint(int):
+class MyInt(int):
     """
     a class that inherits from int
     """
