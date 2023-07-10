@@ -4,7 +4,7 @@ writing an empty class
 """
 
 
-class (BaseGeometry):
+class BaseGeometry:
     """
     an empty class
     """
