@@ -8,7 +8,7 @@ class Myint(int):
     """
 
     def __eq__(self, val):
-        return int.__ne__(self, val)
+        return self.new != val
 
     def __ne__(self, val):
-        return int.__eq__(self, val)
+        return self.new == val
