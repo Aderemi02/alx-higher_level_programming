@@ -1,0 +1,19 @@
+=====================
+Tests for 1-my_list.py
+=====================
+
+>>> Mylist = __import__("1-my_list").Mylist
+
+case 1:
+
+
+>>> newlist = MyList()
+>>> newlist.append(4)
+>>> newlist.append(8)
+>>> newlist.append(6)
+>>> newlist.append(10)
+>>> newlist.append(2)
+>>> print(newlist)
+[4, 8, 6, 10, 2]
+>>> newlist.print_sorted()
+[2, 4, 6, 8, 10]
