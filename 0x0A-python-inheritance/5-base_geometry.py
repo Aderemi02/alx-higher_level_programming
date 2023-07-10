@@ -4,8 +4,9 @@ writing an empty class
 """
 
 
-def class(BaseGeometry):
+class(BaseGeometry):
     """
     an empty class
     """
+
     pass
