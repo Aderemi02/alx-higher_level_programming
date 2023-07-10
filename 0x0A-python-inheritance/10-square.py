@@ -2,7 +2,7 @@
 """
 calculating the area of the square and also rep string
 """
-Rectangle = __import__('9-rectangle').Rectangle
+Rectangle = __import__('9-rectangle.py').Rectangle
 
 
 class Square(Rectangle):
