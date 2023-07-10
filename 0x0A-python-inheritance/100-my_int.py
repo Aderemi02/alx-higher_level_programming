@@ -7,8 +7,8 @@ class Myint:
     a class that inherits from int
     """
 
-    def __pos__(self, other):
-        return int.__neg__(self, other)
+    def __eq__(self, other):
+        return int.__ne__(self, other)
 
-    def __neg__(self, other):
-        return int.__pos__(self, other)
+    def __ne__(self, other):
+        return int.__eq__(self, other)
