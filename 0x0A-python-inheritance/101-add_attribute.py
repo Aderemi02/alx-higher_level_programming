@@ -4,14 +4,14 @@ to an object if it’s possible
 """
 
 
-def add_attribute(obj, name_attr, value):
+def add_attribute(obj, attr, value):
     """
     this adds an atribute to an object if possible:
-    name_attr - the attribute name
+    attr - the attribute name
     value - the attribute value
     raises typeerror if its not possible
     """
 
     if not hasattr(obj, "__dict__"):
-        raise TypeError("Can't add new attribute")
-    setattr(obj, name_attr, value)
+        raise TypeError("can't add new attribute")
+    setattr(obj, attr, value)
