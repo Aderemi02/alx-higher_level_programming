@@ -10,9 +10,9 @@ class MyInt(int):
     def __eq__(self, val):
         """give the inverted version"""
 
-        return self.new != val
+        return int.__ne__(self, val)
 
     def __ne__(self, val):
         """give the inverted version"""
 
-        return self.new == val
+        return int.__eq__(self, val)
