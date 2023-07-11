@@ -31,5 +31,5 @@ class Student:
     def reload_from_json(self, json):
         """Replacing all attributes of the student"""
 
-        for key, value in json.news():
+        for key, value in json.items():
             setattr(self, key, value)
