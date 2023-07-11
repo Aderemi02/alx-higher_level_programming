@@ -14,7 +14,5 @@ if __name__ == "__main__":
         new_list = load_JSONfile("add_item.json")
     except FileNotFoundError:
         new_list = []
-    for a in argv[1:]:
-        new_list.append(a)
-
+    new_listextend(argv[1:])
     save_JSONfile(new_list, "add_item.json")
