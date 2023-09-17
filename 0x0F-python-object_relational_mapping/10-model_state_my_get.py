@@ -20,9 +20,10 @@ if __name__ == "__main__":
     Sess = sessionmaker(bind=engine)
     Base.metadata.create_all(engine)
     newSess = Sess()
-    states = newSess.query(State).order_by(State.id).all()
+    states = newSess.query(State).order_by(State.id.asc()).filter(
+            State.name.like(argv[4])).all()
     if len(states) > 0:
         print(states[0].id)
     else:
         print("Not found")
-    session.close()
+    newSess.close()
