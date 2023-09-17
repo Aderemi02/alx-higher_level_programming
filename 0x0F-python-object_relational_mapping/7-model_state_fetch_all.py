@@ -1,4 +1,4 @@
-#!/use/bin/python3
+#!/usr/bin/python3
 """
 a script that lists all State objects from the database hbtn_0e_6_usa
 """
@@ -21,6 +21,6 @@ if __name__ == "__main__":
     Base.metadata.create_all(engine)
     newSess = Sess()
     states = newSess.query(State).order_by(State.id).all()
-    for name in states:
-        print("{}: {}".format(name.id, name.name))
-    newSess.close()
+    for names in states:
+        print("{}: {}".format(names.id, names.name))
+    session.close()
