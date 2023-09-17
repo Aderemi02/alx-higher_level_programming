@@ -22,7 +22,8 @@ if __name__ == "__main__":
     Base.metadata.create_all(engine)
     newSess = Sess()
     states = newSess.query(State).order_by(
-            State.id.asc()).filter(State.name.like("%a%")).delete(
-                    synchronze_session=False)
+            State.id.asc()).filter(State.name.like("%a%"))
+    for name in states:
+        newSess.delete(name)
     newSess.commit()
     newSess.close()
