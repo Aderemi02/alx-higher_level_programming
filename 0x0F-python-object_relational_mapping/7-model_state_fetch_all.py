@@ -15,7 +15,7 @@ if __name__ == "__main__":
     a script that lists all State objects from the database hbtn_0e_6_usa
     """
 
-    engine = create_engine("mysql+mysqldb://{}:{} \
+    engine = create_engine("mysql+mysqldb://{}:{}\
             @localhost:3306/{}".format(argv[1], argv[2], argv[3]))
     Sess = sessionmaker(bind=engine)
     Base.metadata.create_all(engine)
