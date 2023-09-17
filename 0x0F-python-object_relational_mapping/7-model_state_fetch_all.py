@@ -22,5 +22,5 @@ if __name__ == "__main__":
     newSess = Sess()
     states = newSess.query(State).order_by(State.id).all()
     for name in states:
-        print("{}: {}".format(state.id, state.name))
+        print("{}: {}".format(name.id, name.name))
     newSess.close()
