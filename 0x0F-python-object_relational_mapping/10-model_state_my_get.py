@@ -22,7 +22,7 @@ if __name__ == "__main__":
     newSess = Sess()
     states = newSess.query(State).order_by(State.id).all()
     if len(states) > 0:
-        print(states[0].id))
+        print(states[0].id)
     else:
         print("Not found")
     session.close()
