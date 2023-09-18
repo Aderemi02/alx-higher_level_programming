@@ -21,7 +21,8 @@ if __name__ == "__main__":
     Sess = sessionmaker(bind=engine)
     Base.metadata.create_all(engine)
     newSess = Sess()
-    cities = newSess.query(City).order_by(CIty.id.asc()).all()
+    cities = newSess.query(State.name, City.id, City.name).order_by(
+            City.id.asc()).filter(State.id == City.state_id)
     for names in cities:
-        print("{}: ({}) {}".format(names.state.name, names.id, names.name))
+        print("{}: ({}) {}".format(names[0], names[1], names[2]))
     newSess.close()
