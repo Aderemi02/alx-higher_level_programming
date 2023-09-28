@@ -9,6 +9,5 @@ def find_peak(list_of_integers):
     finds list of integer in an unsorted list
     """
     if list_of_integers:
-        newList = sorted(list_of_integers)
-        num = len(newList) - 1
-        return newList[num]
+        list_of_integers.sort(reverse=True)
+        return list_of_integers[0]
