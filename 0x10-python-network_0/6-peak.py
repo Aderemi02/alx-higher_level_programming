@@ -10,5 +10,5 @@ def find_peak(list_of_integers):
     """
     if list_of_integers:
         newList = sorted(list_of_integers)
-        num = len(newList)
-        return newList[num - 1]
+        num = len(newList) - 1
+        return newList[num]
